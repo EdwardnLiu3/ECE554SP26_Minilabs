@@ -1,0 +1,35 @@
+run -all
+# Test 1: Initial state is FILL
+# 
+# Test 2: HEX displays OFF when SW[0] is low
+# 
+# Waiting for FILL state to complete...
+# Monitoring FIFO fill progress (will timeout after 1000 cycles if stuck)
+# Test 3: Transitioned to EXEC state
+# 
+# Waiting for EXEC state to complete...
+# Test 4: Transitioned to DONE state
+# 
+# Test 5: LED1 (LEDR[1]) is ON in DONE state
+# 
+# Test 7a: HEX0 displays 8 (LSB nibble)
+# 
+# Test 7b: HEX1 displays 5
+# 
+# Test 7c: HEX2 displays B (11)
+# 
+# Test 7d: HEX3 displays 1
+# 
+# Test 7e: HEX4 displays 0
+# 
+# Test 7f: HEX5 displays 0 (MSB nibble)
+# 
+# Test 8: HEX displays turn OFF when SW[0] is turned OFF
+# 
+# Test 9: HEX displays show result again when SW[0] is turned back ON
+# 
+# Test 10: State remains in DONE
+# 
+# ** Note: $stop    : I:/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/minilab0/minilab0_tb.sv(224)
+#    Time: 415 ps  Iteration: 1  Instance: /minilab0_tb
+# Break in Module minilab0_tb at I:/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/minilab0/minilab0_tb.sv line 224

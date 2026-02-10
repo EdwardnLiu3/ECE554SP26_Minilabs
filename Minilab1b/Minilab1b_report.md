@@ -1,0 +1,5 @@
+To test or design via simulation we created a testbench for our code. The testbench print important signal data and also performed unit tests to make sure the correct outputs were being produced. We also used the wave form to ensure our signals were behaving as expected.
+We fixed our design to meet the timing constrant by obseving what signals were causing the most slack via the timing analyzer. To fix the timing issues we added a flip-flop to our FIFO and also pipelined our MAC.
+We tested the design on the board by checking to make sure the board could display the correct results when using the provided .mif file.
+We tested the design using SignalTap by setting the memread to high and the trigger of thememory address to 00000001h. Then we verified that the corrected values were being outputed after running the compliation in SignalTap.
+Some difficulties we faced during the design would be when our matrix multiplication was not working as expected. We were eventually able to debug the issues through using the test bench and the waveform.

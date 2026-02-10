@@ -1,0 +1,390 @@
+run -all
+# 
+# === Starting Matrix-Vector Multiplication Testbench ===
+# 
+# [T=5000] state=IDLE | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# Test 1: Initial idle state works - state=IDLE, done=0, ready_for_b=0
+# 
+# [T=95000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# Test 2: State transition to FETCH_ROWS works
+# 
+# Test 3: Monitoring memory read operations...
+# [T=105000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=1 mem_valid=0
+#   Memory read request: address=0x00000000
+#   Memory read request: address=0x00000000
+# [T=235000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=1
+#   Memory read response: data=0x0102030405060708
+# [T=245000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# [T=245000] FIFO[0] WRITE: data=0x01
+# [T=255000] FIFO[0] WRITE: data=0x02
+# [T=265000] FIFO[0] WRITE: data=0x03
+# [T=275000] FIFO[0] WRITE: data=0x04
+# [T=285000] FIFO[0] WRITE: data=0x05
+# [T=295000] FIFO[0] WRITE: data=0x06
+# [T=305000] FIFO[0] WRITE: data=0x07
+# [T=315000] FIFO[0] WRITE: data=0x08
+# [T=335000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000001 mem_read=1 mem_valid=0
+#   Memory read request: address=0x00000001
+#   Memory read request: address=0x00000001
+# [T=465000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000001 mem_read=0 mem_valid=1
+#   Memory read response: data=0x1112131415161718
+# [T=475000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000001 mem_read=0 mem_valid=0
+# [T=475000] FIFO[1] WRITE: data=0x11
+# [T=485000] FIFO[1] WRITE: data=0x12
+# [T=495000] FIFO[1] WRITE: data=0x13
+# [T=505000] FIFO[1] WRITE: data=0x14
+# [T=515000] FIFO[1] WRITE: data=0x15
+# [T=525000] FIFO[1] WRITE: data=0x16
+# [T=535000] FIFO[1] WRITE: data=0x17
+# [T=545000] FIFO[1] WRITE: data=0x18
+# [T=565000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000002 mem_read=1 mem_valid=0
+#   Memory read request: address=0x00000002
+#   Memory read request: address=0x00000002
+# [T=695000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000002 mem_read=0 mem_valid=1
+#   Memory read response: data=0x2122232425262728
+# [T=705000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000002 mem_read=0 mem_valid=0
+# [T=705000] FIFO[2] WRITE: data=0x21
+# [T=715000] FIFO[2] WRITE: data=0x22
+# [T=725000] FIFO[2] WRITE: data=0x23
+# [T=735000] FIFO[2] WRITE: data=0x24
+# [T=745000] FIFO[2] WRITE: data=0x25
+# [T=755000] FIFO[2] WRITE: data=0x26
+# [T=765000] FIFO[2] WRITE: data=0x27
+# [T=775000] FIFO[2] WRITE: data=0x28
+# [T=795000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000003 mem_read=1 mem_valid=0
+#   Memory read request: address=0x00000003
+#   Memory read request: address=0x00000003
+# [T=925000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000003 mem_read=0 mem_valid=1
+#   Memory read response: data=0x3132333435363738
+# [T=935000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000003 mem_read=0 mem_valid=0
+# [T=935000] FIFO[3] WRITE: data=0x31
+# [T=945000] FIFO[3] WRITE: data=0x32
+# [T=955000] FIFO[3] WRITE: data=0x33
+# [T=965000] FIFO[3] WRITE: data=0x34
+# [T=975000] FIFO[3] WRITE: data=0x35
+# [T=985000] FIFO[3] WRITE: data=0x36
+# [T=995000] FIFO[3] WRITE: data=0x37
+# [T=1005000] FIFO[3] WRITE: data=0x38
+# [T=1025000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000004 mem_read=1 mem_valid=0
+#   Memory read request: address=0x00000004
+#   Memory read request: address=0x00000004
+# [T=1155000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000004 mem_read=0 mem_valid=1
+#   Memory read response: data=0x4142434445464748
+# [T=1165000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000004 mem_read=0 mem_valid=0
+# [T=1165000] FIFO[4] WRITE: data=0x41
+# [T=1175000] FIFO[4] WRITE: data=0x42
+# [T=1185000] FIFO[4] WRITE: data=0x43
+# [T=1195000] FIFO[4] WRITE: data=0x44
+# [T=1205000] FIFO[4] WRITE: data=0x45
+# [T=1215000] FIFO[4] WRITE: data=0x46
+# [T=1225000] FIFO[4] WRITE: data=0x47
+# [T=1235000] FIFO[4] WRITE: data=0x48
+# [T=1255000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000005 mem_read=1 mem_valid=0
+#   Memory read request: address=0x00000005
+#   Memory read request: address=0x00000005
+# [T=1385000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000005 mem_read=0 mem_valid=1
+#   Memory read response: data=0x5152535455565758
+# [T=1395000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000005 mem_read=0 mem_valid=0
+# [T=1395000] FIFO[5] WRITE: data=0x51
+# [T=1405000] FIFO[5] WRITE: data=0x52
+# [T=1415000] FIFO[5] WRITE: data=0x53
+# [T=1425000] FIFO[5] WRITE: data=0x54
+# [T=1435000] FIFO[5] WRITE: data=0x55
+# [T=1445000] FIFO[5] WRITE: data=0x56
+# [T=1455000] FIFO[5] WRITE: data=0x57
+# [T=1465000] FIFO[5] WRITE: data=0x58
+# [T=1485000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000006 mem_read=1 mem_valid=0
+#   Memory read request: address=0x00000006
+#   Memory read request: address=0x00000006
+# [T=1615000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000006 mem_read=0 mem_valid=1
+#   Memory read response: data=0x6162636465666768
+# [T=1625000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000006 mem_read=0 mem_valid=0
+# [T=1625000] FIFO[6] WRITE: data=0x61
+# [T=1635000] FIFO[6] WRITE: data=0x62
+# [T=1645000] FIFO[6] WRITE: data=0x63
+# [T=1655000] FIFO[6] WRITE: data=0x64
+# [T=1665000] FIFO[6] WRITE: data=0x65
+# [T=1675000] FIFO[6] WRITE: data=0x66
+# [T=1685000] FIFO[6] WRITE: data=0x67
+# [T=1695000] FIFO[6] WRITE: data=0x68
+# [T=1715000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=1 mem_valid=0
+#   Memory read request: address=0x00000007
+#   Memory read request: address=0x00000007
+# [T=1845000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=0 mem_valid=1
+#   Memory read response: data=0x7172737475767778
+# [T=1855000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=0 mem_valid=0
+# [T=1855000] FIFO[7] WRITE: data=0x71
+# [T=1865000] FIFO[7] WRITE: data=0x72
+# [T=1875000] FIFO[7] WRITE: data=0x73
+# [T=1885000] FIFO[7] WRITE: data=0x74
+# [T=1895000] FIFO[7] WRITE: data=0x75
+# [T=1905000] FIFO[7] WRITE: data=0x76
+# [T=1915000] FIFO[7] WRITE: data=0x77
+# [T=1925000] FIFO[7] WRITE: data=0x78
+# [T=1945000] state=WAIT_FIFOS_FULL | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=0 mem_valid=0
+# Test 3: Memory fetch phase completed
+# 
+# Test 4: State transition to WAIT_FIFOS_FULL works
+# 
+# [T=1955000] state=IDLE | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=0 mem_valid=0
+# Test 5: Waiting for COMPUTE state...
+# [T=1965000] state=WAIT_FIFOS_FULL | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# [CORE DEBUG] T=1975000 cnt=0 En0=0 A0=0x01 B0=0x00 Rden0=0 Empty0=0
+# [T=1975000] state=COMPUTE | start=0 done=0 ready_for_b=1 | mem_addr=00000000 mem_read=0 mem_valid=0
+# Test 5: State transition to COMPUTE works
+# 
+# Test 6: Feeding B vector inputs...
+#   >>> Feeding B[0] = 0x81, ready_for_b=1
+#       [Cycle 0] en_chain[0]=0, fifo_empty[0]=0, fifo_rden[0]=0, Ain=0x01
+# [CORE DEBUG] T=1985000 cnt=1 En0=0 A0=0x01 B0=0x00 Rden0=0 Empty0=0
+#   >>> Feeding B[1] = 0x82, ready_for_b=1
+#       [Cycle 1] en_chain[0]=0, fifo_empty[0]=0, fifo_rden[0]=0, Ain=0x01
+# [CORE DEBUG] T=1995000 cnt=2 En0=1 A0=0x01 B0=0x81 Rden0=1 Empty0=0
+#   >>> Feeding B[2] = 0x83, ready_for_b=1
+#       [Cycle 2] en_chain[0]=1, fifo_empty[0]=0, fifo_rden[0]=1, Ain=0x01
+# [CORE DEBUG] T=2005000 cnt=3 En0=1 A0=0x02 B0=0x82 Rden0=1 Empty0=0
+#   >>> Feeding B[3] = 0x84, ready_for_b=1
+#       [Cycle 3] en_chain[0]=1, fifo_empty[0]=0, fifo_rden[0]=1, Ain=0x02
+# [CORE DEBUG] T=2015000 cnt=4 En0=1 A0=0x03 B0=0x83 Rden0=1 Empty0=0
+#   >>> Feeding B[4] = 0x85, ready_for_b=1
+#       [Cycle 4] en_chain[0]=1, fifo_empty[0]=0, fifo_rden[0]=1, Ain=0x03
+# [CORE DEBUG] T=2025000 cnt=5 En0=1 A0=0x04 B0=0x84 Rden0=1 Empty0=0
+#   >>> Feeding B[5] = 0x86, ready_for_b=1
+#       [Cycle 5] en_chain[0]=1, fifo_empty[0]=0, fifo_rden[0]=1, Ain=0x04
+# [CORE DEBUG] T=2035000 cnt=6 En0=1 A0=0x05 B0=0x85 Rden0=1 Empty0=0
+#   >>> Feeding B[6] = 0x87, ready_for_b=1
+#       [Cycle 6] en_chain[0]=1, fifo_empty[0]=0, fifo_rden[0]=1, Ain=0x05
+# [CORE DEBUG] T=2045000 cnt=7 En0=1 A0=0x06 B0=0x86 Rden0=1 Empty0=0
+#   >>> Feeding B[7] = 0x88, ready_for_b=1
+#       [Cycle 7] en_chain[0]=1, fifo_empty[0]=0, fifo_rden[0]=1, Ain=0x06
+# [CORE DEBUG] T=2055000 cnt=8 En0=1 A0=0x07 B0=0x87 Rden0=1 Empty0=0
+#       [Cycle 8] en_chain[0]=1, fifo_empty[0]=0, fifo_rden[0]=1, Ain=0x07
+# [CORE DEBUG] T=2065000 cnt=9 En0=1 A0=0x08 B0=0x88 Rden0=1 Empty0=0
+#       [Cycle 9] en_chain[0]=1, fifo_empty[0]=0, fifo_rden[0]=1, Ain=0x08
+# [CORE DEBUG] T=2075000 cnt=10 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#       [Cycle 10] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01
+# [CORE DEBUG] T=2085000 cnt=11 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#       [Cycle 11] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01
+# [CORE DEBUG] T=2095000 cnt=12 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#       [Cycle 12] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01
+# [CORE DEBUG] T=2105000 cnt=13 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#       [Cycle 13] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01
+# [CORE DEBUG] T=2115000 cnt=14 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#       [Cycle 14] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01
+# [CORE DEBUG] T=2125000 cnt=15 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+# [T=2125000] state=COMPUTE | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# Test 6: B vector input completed (fed 15 values)
+# 
+# Test 7: Monitoring computation phase...
+#   [Cycle 15] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2135000 cnt=16 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 16] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2145000 cnt=17 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 17] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2155000 cnt=18 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 18] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2165000 cnt=19 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 19] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2175000 cnt=20 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 20] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2185000 cnt=21 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 21] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2195000 cnt=22 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 22] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2205000 cnt=23 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 23] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [CORE DEBUG] T=2215000 cnt=24 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=1
+#   [Cycle 24] en_chain[0]=0, fifo_empty[0]=1, fifo_rden[0]=0, Ain=0x01, Bin=0x88
+# [T=2225000] state=DONE_STATE | start=0 done=1 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# Test 7: Compute phase completed
+# 
+# Test 7: State transition to DONE_STATE works
+# 
+# Test 8: Done signal asserted correctly
+# 
+# 
+# === Test 9: Computation Results ===
+#   result[0] = 0x0012cc (CORRECT)
+#   result[1] = 0x00550c (21772 decimal)
+#   result[2] = 0x00974c (38732 decimal)
+#   result[3] = 0x00d98c (55692 decimal)
+#   result[4] = 0x011bcc (72652 decimal)
+#   result[5] = 0x015e0c (89612 decimal)
+#   result[6] = 0x01a04c (106572 decimal)
+#   result[7] = 0x01e28c (123532 decimal)
+# 
+#   FIFO Status:
+#     FIFO[0]: full=0 empty=1
+#     FIFO[1]: full=0 empty=1
+#     FIFO[2]: full=0 empty=1
+#     FIFO[3]: full=0 empty=1
+#     FIFO[4]: full=0 empty=1
+#     FIFO[5]: full=0 empty=1
+#     FIFO[6]: full=0 empty=1
+#     FIFO[7]: full=0 empty=1
+# Test 9: Results verified against part 1 spec
+# 
+# [T=2235000] state=IDLE | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# Test 10: Return to IDLE state works - state=IDLE, done=0
+# 
+# Test 11: Starting second computation with different B vector...
+# [T=2275000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# [T=2285000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=1 mem_valid=0
+# [T=2415000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=1
+# [T=2425000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# [T=2425000] FIFO[0] WRITE: data=0x01
+# [T=2435000] FIFO[0] WRITE: data=0x02
+# [T=2445000] FIFO[0] WRITE: data=0x03
+# [T=2455000] FIFO[0] WRITE: data=0x04
+# [T=2465000] FIFO[0] WRITE: data=0x05
+# [T=2475000] FIFO[0] WRITE: data=0x06
+# [T=2485000] FIFO[0] WRITE: data=0x07
+# [T=2495000] FIFO[0] WRITE: data=0x08
+# [T=2515000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000001 mem_read=1 mem_valid=0
+# [T=2645000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000001 mem_read=0 mem_valid=1
+# [T=2655000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000001 mem_read=0 mem_valid=0
+# [T=2655000] FIFO[1] WRITE: data=0x11
+# [T=2665000] FIFO[1] WRITE: data=0x12
+# [T=2675000] FIFO[1] WRITE: data=0x13
+# [T=2685000] FIFO[1] WRITE: data=0x14
+# [T=2695000] FIFO[1] WRITE: data=0x15
+# [T=2705000] FIFO[1] WRITE: data=0x16
+# [T=2715000] FIFO[1] WRITE: data=0x17
+# [T=2725000] FIFO[1] WRITE: data=0x18
+# [T=2745000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000002 mem_read=1 mem_valid=0
+# [T=2875000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000002 mem_read=0 mem_valid=1
+# [T=2885000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000002 mem_read=0 mem_valid=0
+# [T=2885000] FIFO[2] WRITE: data=0x21
+# [T=2895000] FIFO[2] WRITE: data=0x22
+# [T=2905000] FIFO[2] WRITE: data=0x23
+# [T=2915000] FIFO[2] WRITE: data=0x24
+# [T=2925000] FIFO[2] WRITE: data=0x25
+# [T=2935000] FIFO[2] WRITE: data=0x26
+# [T=2945000] FIFO[2] WRITE: data=0x27
+# [T=2955000] FIFO[2] WRITE: data=0x28
+# [T=2975000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000003 mem_read=1 mem_valid=0
+# [T=3105000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000003 mem_read=0 mem_valid=1
+# [T=3115000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000003 mem_read=0 mem_valid=0
+# [T=3115000] FIFO[3] WRITE: data=0x31
+# [T=3125000] FIFO[3] WRITE: data=0x32
+# [T=3135000] FIFO[3] WRITE: data=0x33
+# [T=3145000] FIFO[3] WRITE: data=0x34
+# [T=3155000] FIFO[3] WRITE: data=0x35
+# [T=3165000] FIFO[3] WRITE: data=0x36
+# [T=3175000] FIFO[3] WRITE: data=0x37
+# [T=3185000] FIFO[3] WRITE: data=0x38
+# [T=3205000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000004 mem_read=1 mem_valid=0
+# [T=3335000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000004 mem_read=0 mem_valid=1
+# [T=3345000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000004 mem_read=0 mem_valid=0
+# [T=3345000] FIFO[4] WRITE: data=0x41
+# [T=3355000] FIFO[4] WRITE: data=0x42
+# [T=3365000] FIFO[4] WRITE: data=0x43
+# [T=3375000] FIFO[4] WRITE: data=0x44
+# [T=3385000] FIFO[4] WRITE: data=0x45
+# [T=3395000] FIFO[4] WRITE: data=0x46
+# [T=3405000] FIFO[4] WRITE: data=0x47
+# [T=3415000] FIFO[4] WRITE: data=0x48
+# [T=3435000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000005 mem_read=1 mem_valid=0
+# [T=3565000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000005 mem_read=0 mem_valid=1
+# [T=3575000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000005 mem_read=0 mem_valid=0
+# [T=3575000] FIFO[5] WRITE: data=0x51
+# [T=3585000] FIFO[5] WRITE: data=0x52
+# [T=3595000] FIFO[5] WRITE: data=0x53
+# [T=3605000] FIFO[5] WRITE: data=0x54
+# [T=3615000] FIFO[5] WRITE: data=0x55
+# [T=3625000] FIFO[5] WRITE: data=0x56
+# [T=3635000] FIFO[5] WRITE: data=0x57
+# [T=3645000] FIFO[5] WRITE: data=0x58
+# [T=3665000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000006 mem_read=1 mem_valid=0
+# [T=3795000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000006 mem_read=0 mem_valid=1
+# [T=3805000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000006 mem_read=0 mem_valid=0
+# [T=3805000] FIFO[6] WRITE: data=0x61
+# [T=3815000] FIFO[6] WRITE: data=0x62
+# [T=3825000] FIFO[6] WRITE: data=0x63
+# [T=3835000] FIFO[6] WRITE: data=0x64
+# [T=3845000] FIFO[6] WRITE: data=0x65
+# [T=3855000] FIFO[6] WRITE: data=0x66
+# [T=3865000] FIFO[6] WRITE: data=0x67
+# [T=3875000] FIFO[6] WRITE: data=0x68
+# [T=3895000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=1 mem_valid=0
+# [T=4025000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=0 mem_valid=1
+# [T=4035000] state=FETCH_ROWS | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=0 mem_valid=0
+# [T=4035000] FIFO[7] WRITE: data=0x71
+# [T=4045000] FIFO[7] WRITE: data=0x72
+# [T=4055000] FIFO[7] WRITE: data=0x73
+# [T=4065000] FIFO[7] WRITE: data=0x74
+# [T=4075000] FIFO[7] WRITE: data=0x75
+# [T=4085000] FIFO[7] WRITE: data=0x76
+# [T=4095000] FIFO[7] WRITE: data=0x77
+# [T=4105000] FIFO[7] WRITE: data=0x78
+# [T=4125000] state=WAIT_FIFOS_FULL | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=0 mem_valid=0
+# [T=4135000] state=IDLE | start=0 done=0 ready_for_b=0 | mem_addr=00000007 mem_read=0 mem_valid=0
+# [T=4145000] state=WAIT_FIFOS_FULL | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# [CORE DEBUG] T=4155000 cnt=0 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=0
+# [T=4155000] state=COMPUTE | start=0 done=0 ready_for_b=1 | mem_addr=00000000 mem_read=0 mem_valid=0
+# [CORE DEBUG] T=4165000 cnt=1 En0=0 A0=0x01 B0=0x88 Rden0=0 Empty0=0
+# [CORE DEBUG] T=4175000 cnt=2 En0=1 A0=0x01 B0=0x0a Rden0=1 Empty0=0
+# [CORE DEBUG] T=4185000 cnt=3 En0=1 A0=0x02 B0=0x0b Rden0=1 Empty0=0
+# [CORE DEBUG] T=4195000 cnt=4 En0=1 A0=0x03 B0=0x0c Rden0=1 Empty0=0
+# [CORE DEBUG] T=4205000 cnt=5 En0=1 A0=0x04 B0=0x0d Rden0=1 Empty0=0
+# [CORE DEBUG] T=4215000 cnt=6 En0=1 A0=0x05 B0=0x0e Rden0=1 Empty0=0
+# [CORE DEBUG] T=4225000 cnt=7 En0=1 A0=0x06 B0=0x0f Rden0=1 Empty0=0
+# [CORE DEBUG] T=4235000 cnt=8 En0=1 A0=0x07 B0=0x10 Rden0=1 Empty0=0
+# [CORE DEBUG] T=4245000 cnt=9 En0=1 A0=0x08 B0=0x11 Rden0=1 Empty0=0
+# [CORE DEBUG] T=4255000 cnt=10 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4265000 cnt=11 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4275000 cnt=12 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4285000 cnt=13 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4295000 cnt=14 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4305000 cnt=15 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [T=4305000] state=COMPUTE | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# [CORE DEBUG] T=4315000 cnt=16 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4325000 cnt=17 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4335000 cnt=18 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4345000 cnt=19 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4355000 cnt=20 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4365000 cnt=21 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4375000 cnt=22 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4385000 cnt=23 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [CORE DEBUG] T=4395000 cnt=24 En0=0 A0=0x01 B0=0x11 Rden0=0 Empty0=1
+# [T=4405000] state=DONE_STATE | start=0 done=1 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# 
+# === Test 11: Second Computation Results ===
+#   result[0] = 0x000210 (528 decimal)
+#   result[1] = 0x0008d0 (2256 decimal)
+#   result[2] = 0x000f90 (3984 decimal)
+#   result[3] = 0x001650 (5712 decimal)
+#   result[4] = 0x001d10 (7440 decimal)
+#   result[5] = 0x0023d0 (9168 decimal)
+#   result[6] = 0x002a90 (10896 decimal)
+#   result[7] = 0x003150 (12624 decimal)
+# Test 11: Second computation completed successfully
+# 
+# [T=4415000] state=IDLE | start=0 done=0 ready_for_b=0 | mem_addr=00000000 mem_read=0 mem_valid=0
+# Test 12: FIFO operation verification
+#   All FIFOs should be empty after computation:
+#     FIFO[0]: empty=1 (correct)
+#     FIFO[1]: empty=1 (correct)
+#     FIFO[2]: empty=1 (correct)
+#     FIFO[3]: empty=1 (correct)
+#     FIFO[4]: empty=1 (correct)
+#     FIFO[5]: empty=1 (correct)
+#     FIFO[6]: empty=1 (correct)
+#     FIFO[7]: empty=1 (correct)
+# Test 12: FIFO verification completed
+# 
+# 
+# 
+# ========================================
+#         TEST SUMMARY
+# ========================================
+#   Tests Passed: 11
+#   Tests Failed: 0
+#   Total Tests:  11
+# 
+#   *** ALL TESTS PASSED! ***
+# ========================================
+# 
+# ** Note: $stop    : I:/Minilab1b/mat_vec_mult_tb.sv(360)
+#    Time: 4455 ns  Iteration: 1  Instance: /mat_vec_mult_tb
+# Break in Module mat_vec_mult_tb at I:/Minilab1b/mat_vec_mult_tb.sv line 360

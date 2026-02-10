@@ -1,0 +1,1 @@
+I created the respository by clicking the create repository button on the Github website and selected the option to make the repository public. The IP version uses less resources than the Non-IP version. This is possbily because the pre-built Altera blocks are more optimized then the ones my group created.
