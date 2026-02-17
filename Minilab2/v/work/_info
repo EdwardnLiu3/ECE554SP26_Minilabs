@@ -1,0 +1,55 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v
+vbayer_to_grayscale
+Z1 !s110 1770770531
+!i10b 1
+!s100 fbb3o0Ri=oR5507S7Gl@N3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IdL39kKEfQ<;7QMM[eL=M@2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1770769868
+8bayer_to_grayscale.v
+Fbayer_to_grayscale.v
+!i122 0
+L0 21 94
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1770770531.000000
+!s107 bayer_to_grayscale_tb.v|bayer_to_grayscale.v|
+Z6 !s90 bayer_to_grayscale.v|bayer_to_grayscale_tb.v|
+!i113 1
+Z7 tCvgOpt 0
+vbayer_to_grayscale_tb
+R1
+!i10b 1
+!s100 =[JU@]h_CA7BFJfZfMZ_e1
+R2
+IMdE4A:?8^SA;5>[h4lH[;2
+R3
+R0
+w1770770276
+8bayer_to_grayscale_tb.v
+Fbayer_to_grayscale_tb.v
+!i122 0
+L0 3 143
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 bayer_to_grayscale_tb.v|bayer_to_grayscale.v|
+R6
+!i113 1
+R7

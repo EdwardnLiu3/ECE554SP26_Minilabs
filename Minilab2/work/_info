@@ -1,0 +1,287 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/Minilab1b
+vbayer_row_buffer
+!s110 1771306600
+!i10b 1
+!s100 V<JA7lFRO>5nAkI5<ER<I0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<`71m]4><nk:ek:A?lzW?2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA
+w1771305841
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_row_buffer.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_row_buffer.v
+!i122 235
+L0 16 57
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1771306600.000000
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_row_buffer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_row_buffer.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vbayer_row_buffer_tb
+Z7 !s110 1771306601
+!i10b 1
+!s100 @l2NdAKnBhI8EY>77dD:?0
+R0
+IdElY=A52IlN6:bHTK0B2X3
+R1
+R2
+w1770768582
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_row_buffer_tb.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_row_buffer_tb.v
+!i122 236
+L0 14 195
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_row_buffer_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_row_buffer_tb.v|
+!i113 1
+R5
+R6
+vbayer_to_grayscale
+R7
+!i10b 1
+!s100 2D@g:T<]V4n[<b5YiOjDF2
+R0
+II41=_7j7OR?E7XVI0Fk_R1
+R1
+R2
+w1771305847
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_to_grayscale.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_to_grayscale.v
+!i122 237
+L0 22 122
+R3
+r1
+!s85 0
+31
+Z8 !s108 1771306601.000000
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_to_grayscale.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_to_grayscale.v|
+!i113 1
+R5
+R6
+vbayer_to_grayscale_tb
+R7
+!i10b 1
+!s100 =[JU@]h_CA7BFJfZfMZ_e1
+R0
+ISonHc`5U6D0050<ZMA>OJ2
+R1
+R2
+w1770770276
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_to_grayscale_tb.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_to_grayscale_tb.v
+!i122 238
+L0 3 143
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_to_grayscale_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/bayer_to_grayscale_tb.v|
+!i113 1
+R5
+R6
+vgrayscale_row_buffer
+R7
+!i10b 1
+!s100 6Q;XXS_P114bi818ElMeH2
+R0
+IT1l<R[gAS5MzV27l>CTG^0
+R1
+R2
+w1771305861
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/grayscale_row_buffer.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/grayscale_row_buffer.v
+!i122 239
+L0 34 69
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/grayscale_row_buffer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/grayscale_row_buffer.v|
+!i113 1
+R5
+R6
+vgrayscale_row_buffer_tb
+R7
+!i10b 1
+!s100 jI<]H;P^ERg^c@167o3HL3
+R0
+I4e>M4RXlA7^XcoQcQgABX3
+R1
+R2
+w1770928856
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/grayscale_row_buffer_tb.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/grayscale_row_buffer_tb.v
+!i122 240
+L0 15 197
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/grayscale_row_buffer_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/grayscale_row_buffer_tb.v|
+!i113 1
+R5
+R6
+vimage_processing_pipeline
+Z9 !s110 1771306602
+!i10b 1
+!s100 0BJagG?z_=6FcR`nhN[T]3
+R0
+I27R7AD3YYd_hMTPNV^Nmh1
+R1
+R2
+w1770931215
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/image_processing_pipeline.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/image_processing_pipeline.v
+!i122 245
+L0 22 115
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/image_processing_pipeline.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/image_processing_pipeline.v|
+!i113 1
+R5
+R6
+vimage_processing_pipeline_tb
+R9
+!i10b 1
+!s100 52n6SQDGB3=QTdM^mVo1V2
+R0
+In5BTm1eGdf_9h4zdPmiAF0
+R1
+R2
+w1771306589
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/image_processing_pipeline_tb.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/image_processing_pipeline_tb.v
+!i122 246
+L0 3 323
+R3
+r1
+!s85 0
+31
+!s108 1771306602.000000
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/image_processing_pipeline_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/image_processing_pipeline_tb.v|
+!i113 1
+R5
+R6
+vsobel_abs_value
+R7
+!i10b 1
+!s100 go<>P[b0E?0P[z81@_FLP1
+R0
+Ib5hefd;cLm5BYT0QA=LBK2
+R1
+R2
+w1771305915
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_abs_value.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_abs_value.v
+!i122 243
+L0 17 48
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_abs_value.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_abs_value.v|
+!i113 1
+R5
+R6
+vsobel_abs_value_tb
+R7
+!i10b 1
+!s100 cldI4`CSL@I2G^z0]IOW12
+R0
+I`INHQVcaWMOClR=11kd:80
+R1
+R2
+w1770930736
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_abs_value_tb.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_abs_value_tb.v
+!i122 244
+L0 19 225
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_abs_value_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_abs_value_tb.v|
+!i113 1
+R5
+R6
+vsobel_conv_3x3
+R7
+!i10b 1
+!s100 hGPBENGfC[UEDbaQahS;J3
+R0
+I?0lcdlHVm5ONFC<DWj?K32
+R1
+R2
+w1771305909
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_conv_3x3.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_conv_3x3.v
+!i122 241
+L0 23 102
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_conv_3x3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_conv_3x3.v|
+!i113 1
+R5
+R6
+vsobel_conv_3x3_tb
+R7
+!i10b 1
+!s100 XD7>ECPecAo1M>dl6]5SB2
+R0
+I5HFlGQD=13<6SozBzQIZF1
+R1
+R2
+w1770934524
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_conv_3x3_tb.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_conv_3x3_tb.v
+!i122 242
+L0 17 226
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_conv_3x3_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA/v/sobel_conv_3x3_tb.v|
+!i113 1
+R5
+R6
