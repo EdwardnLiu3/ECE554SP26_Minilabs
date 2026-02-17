@@ -12,7 +12,6 @@
 //                [3x3 Sobel Conv]        Sobel X & Y gradients
 //                [Absolute Value]        |Gx|+|Gy| / 8 → 12-bit edge
 //
-// Written by:  Student (custom module for image processing pipeline)
 //
 // Interface: Drop-in replacement for RAW2RGB in DE1_SoC_CAMERA.v
 //   Input:  Bayer pixels + valid + coordinates from CCD_Capture
