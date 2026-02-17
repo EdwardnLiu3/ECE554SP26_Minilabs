@@ -328,6 +328,7 @@ image_processing_pipeline u4 (
     .iDVAL   (mCCD_DVAL),
     .iX_Cont (X_Cont),
     .iY_Cont (Y_Cont),
+    .iMode   (SW[2:1]),    // 00=combined, 01=Gx(vert), 10=Gy(horiz)
     .oDATA   (sobel_edge_val),
     .oDVAL   (sCCD_DVAL)
 );

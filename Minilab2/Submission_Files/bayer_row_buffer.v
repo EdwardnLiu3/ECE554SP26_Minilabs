@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------
+    // --------------------------------------------------------------------
 // Module:      bayer_row_buffer
 // Description: RAM-based shift register that buffers one full row of
 //              Bayer pixels from the D5M camera (1280 pixels). Provides
