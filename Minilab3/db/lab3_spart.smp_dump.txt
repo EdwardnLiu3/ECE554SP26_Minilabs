@@ -1,0 +1,23 @@
+
+State Machine - |lab3_spart|driver:driver0|state
+Name state.WRITE state.WAIT_TBR state.READ state.IDLE state.INIT_HIGH state.INIT_LOW 
+state.INIT_LOW 0 0 0 0 0 0 
+state.INIT_HIGH 0 0 0 0 1 1 
+state.IDLE 0 0 0 1 0 1 
+state.READ 0 0 1 0 0 1 
+state.WAIT_TBR 0 1 0 0 0 1 
+state.WRITE 1 0 0 0 0 1 
+
+State Machine - |lab3_spart|spart:spart0|rx_state
+Name rx_state.RX_STOP rx_state.RX_DATA rx_state.RX_START rx_state.RX_IDLE 
+rx_state.RX_IDLE 0 0 0 0 
+rx_state.RX_START 0 0 1 1 
+rx_state.RX_DATA 0 1 0 1 
+rx_state.RX_STOP 1 0 0 1 
+
+State Machine - |lab3_spart|spart:spart0|tx_state
+Name tx_state.TX_STOP tx_state.TX_DATA tx_state.TX_START tx_state.TX_IDLE 
+tx_state.TX_IDLE 0 0 0 0 
+tx_state.TX_START 0 0 1 1 
+tx_state.TX_DATA 0 1 0 1 
+tx_state.TX_STOP 1 0 0 1 

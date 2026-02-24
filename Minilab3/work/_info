@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/DE1_SoC_CAMERA
+vdriver
+Z0 !s110 1771541449
+!i10b 1
+!s100 ?oPok=lTWD2m]Qf4zIj2U0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>VV:JOnFe1E<`e;zVeWY>3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart
+w1771535625
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/driver.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/driver.v
+!i122 3
+L0 26 114
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1771541448.000000
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/driver.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/driver.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vspart
+R0
+!i10b 1
+!s100 m12?0K13mnTRl=9^Y?nim0
+R1
+IO@L00PiO<OOzHE[jfgaN52
+R2
+R3
+w1771535401
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart.v
+!i122 4
+L0 22 284
+R4
+r1
+!s85 0
+31
+Z7 !s108 1771541449.000000
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart.v|
+!i113 1
+R5
+R6
+vspart_tb
+R0
+!i10b 1
+!s100 VVnfhdSU^aEhznYRk`8^30
+R1
+Ib:?L<PgN6E=>MYd7zE49n3
+R2
+R3
+w1771541427
+8C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart_tb.v
+FC:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart_tb.v
+!i122 5
+L0 47 545
+R4
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart_tb.v|
+!i113 1
+R5
+R6

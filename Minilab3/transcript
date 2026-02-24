@@ -1,0 +1,254 @@
+vsim work.spart_tb
+# vsim work.spart_tb 
+# Start time: 16:43:13 on Feb 19,2026
+# Loading work.spart_tb
+# Loading work.spart
+# Loading work.driver
+run -all
+# 
+# === Starting SPART + Driver Simulation Testbench ===
+# === Initial baud rate: 38400 baud (br_cfg=11, divisor=80) ===
+# 
+# [T=5000] Driver -> INIT_LOW  : writing div[7:0]=0x50 to SPART1
+# Test  1 PASS: Driver state = INIT_LOW (0) after reset
+# 
+# Test  2 FAIL: Expected INIT_HIGH (1), got state=0
+# 
+# [T=55000] Driver -> INIT_HIGH : writing div[15:8]=0x00 to SPART1
+# Test  3 FAIL: Expected IDLE (2), got state=1
+# 
+# Test  4 FAIL: Expected SPART1.divisor_buf=80, got 336
+# 
+# [T=65000] Driver -> IDLE      : polling RDA
+# Test  5 PASS: SPART0.divisor_buf = 80 - baud rates matched
+# 
+# Test  6: Sending 'A' (0x41) at 38400 baud, awaiting echo...
+# [T=125625000] Driver -> READ      : reading received byte from SPART1
+# [T=125635000] Driver -> WAIT_TBR  : polling TBR
+# [T=125645000] Driver -> WRITE     : echoing 0x41 ('A') to SPART1
+# [T=125655000] Driver -> IDLE      : polling RDA
+# Test  6 PASS: Echo 0x41 ('A') matches sent 'A'
+# 
+# Test  7: Sending 'Z' (0x5A) at 38400 baud, awaiting echo...
+# [T=371865000] Driver -> READ      : reading received byte from SPART1
+# [T=371875000] Driver -> WAIT_TBR  : polling TBR
+# [T=371885000] Driver -> WRITE     : echoing 0x5a ('Z') to SPART1
+# [T=371895000] Driver -> IDLE      : polling RDA
+# Test  7 PASS: Echo 0x5a ('Z') matches sent 'Z'
+# 
+# Test  8: Sending 'HELLO' (5 chars) at 38400 baud, checking each echo...
+# [T=618105000] Driver -> READ      : reading received byte from SPART1
+# [T=618115000] Driver -> WAIT_TBR  : polling TBR
+# [T=618125000] Driver -> WRITE     : echoing 0x48 ('H') to SPART1
+# [T=618135000] Driver -> IDLE      : polling RDA
+#   'H' (0x48) echoed correctly
+# [T=864345000] Driver -> READ      : reading received byte from SPART1
+# [T=864355000] Driver -> WAIT_TBR  : polling TBR
+# [T=864365000] Driver -> WRITE     : echoing 0x45 ('E') to SPART1
+# [T=864375000] Driver -> IDLE      : polling RDA
+#   'E' (0x45) echoed correctly
+# [T=1110585000] Driver -> READ      : reading received byte from SPART1
+# [T=1110595000] Driver -> WAIT_TBR  : polling TBR
+# [T=1110605000] Driver -> WRITE     : echoing 0x4c ('L') to SPART1
+# [T=1110615000] Driver -> IDLE      : polling RDA
+#   'L' (0x4C) echoed correctly
+# [T=1356825000] Driver -> READ      : reading received byte from SPART1
+# [T=1356835000] Driver -> WAIT_TBR  : polling TBR
+# [T=1356845000] Driver -> WRITE     : echoing 0x4c ('L') to SPART1
+# [T=1356855000] Driver -> IDLE      : polling RDA
+#   'L' (0x4C) echoed correctly
+# [T=1603065000] Driver -> READ      : reading received byte from SPART1
+# [T=1603075000] Driver -> WAIT_TBR  : polling TBR
+# [T=1603085000] Driver -> WRITE     : echoing 0x4f ('O') to SPART1
+# [T=1603095000] Driver -> IDLE      : polling RDA
+#   'O' (0x4F) echoed correctly
+# Test  8 PASS: All 5 'HELLO' characters echoed correctly
+# 
+# Test  9: Reading SPART0 Status Register (IOADDR=01)...
+#   Status Register = 0x02  |  TBR=1  RDA=0
+# Test  9 PASS: TBR=1 (buffer free), RDA=0 (no pending data)
+# 
+# Test 10: Switching to 9600 baud (br_cfg=01, divisor=325)...
+# [T=1726715000] Driver -> INIT_LOW  : writing div[7:0]=0x45 to SPART1
+# [T=1726765000] Driver -> INIT_HIGH : writing div[15:8]=0x01 to SPART1
+# [T=1726775000] Driver -> IDLE      : polling RDA
+# Test 10 PASS: SPART1.divisor_buf = 325 (0x0145) for 9600 baud
+# 
+# Test 11: Sending 'S' (0x53) at 9600 baud, awaiting echo...
+# [T=2222285000] Driver -> READ      : reading received byte from SPART1
+# [T=2222295000] Driver -> WAIT_TBR  : polling TBR
+# [T=2222305000] Driver -> WRITE     : echoing 0x53 ('S') to SPART1
+# [T=2222315000] Driver -> IDLE      : polling RDA
+# Test 11 PASS: 9600 baud echo 0x53 ('S') matches 'S'
+# 
+# Test 12: Switching to 19200 baud (br_cfg=10, divisor=162)...
+# [T=2717825000] Driver -> INIT_LOW  : writing div[7:0]=0xa2 to SPART1
+# [T=2717875000] Driver -> INIT_HIGH : writing div[15:8]=0x00 to SPART1
+# [T=2717885000] Driver -> IDLE      : polling RDA
+# Test 12 PASS: SPART1.divisor_buf = 162 (0x00a2) for 19200 baud
+# 
+# Test 13: Sending '!' (0x21) at 19200 baud, awaiting echo...
+# [T=2967265000] Driver -> READ      : reading received byte from SPART1
+# [T=2967275000] Driver -> WAIT_TBR  : polling TBR
+# [T=2967285000] Driver -> WRITE     : echoing 0x21 ('!') to SPART1
+# [T=2967295000] Driver -> IDLE      : polling RDA
+# Test 13 PASS: 19200 baud echo 0x21 ('!') matches '!'
+# 
+# Test 14: Switching to 4800 baud (br_cfg=00, divisor=650)...
+# [T=3215045000] Driver -> INIT_LOW  : writing div[7:0]=0x8a to SPART1
+# [T=3215095000] Driver -> INIT_HIGH : writing div[15:8]=0x02 to SPART1
+# [T=3215105000] Driver -> IDLE      : polling RDA
+# Test 14 PASS: SPART1.divisor_buf = 650 (0x028a) for 4800 baud
+# 
+# Test 15: Sending 'X' (0x58) at 4800 baud, awaiting echo...
+# [T=4201365000] Driver -> READ      : reading received byte from SPART1
+# [T=4201375000] Driver -> WAIT_TBR  : polling TBR
+# [T=4201385000] Driver -> WRITE     : echoing 0x58 ('X') to SPART1
+# [T=4201395000] Driver -> IDLE      : polling RDA
+# Test 15 PASS: 4800 baud echo 0x58 ('X') matches 'X'
+# 
+# 
+# 
+# ========================================
+#            TEST SUMMARY
+# ========================================
+#   Tests Passed: 12
+#   Tests Failed: 3
+#   Total Tests:  15
+# 
+#   *** SOME TESTS FAILED ***
+# ========================================
+# 
+# ** Note: $stop    : C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart_tb.v(581)
+#    Time: 5190890 ns  Iteration: 1  Instance: /spart_tb
+# Break in Module spart_tb at C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart_tb.v line 581
+# Compile of driver.v was successful.
+# Compile of spart.v was successful.
+# Compile of spart_tb.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.spart_tb
+# End time: 16:50:55 on Feb 19,2026, Elapsed time: 0:07:42
+# Errors: 0, Warnings: 2
+# vsim work.spart_tb 
+# Start time: 16:50:55 on Feb 19,2026
+# Loading work.spart_tb
+# Loading work.spart
+# Loading work.driver
+run -all
+# 
+# === Starting SPART + Driver Simulation Testbench ===
+# === Initial baud rate: 38400 baud (br_cfg=11, divisor=80) ===
+# 
+# [T=5000] Driver -> INIT_LOW  : writing div[7:0]=0x50 to SPART1
+# Test  1 PASS: Driver state = INIT_LOW (0) after reset
+# 
+# Test  2 PASS: Driver state = INIT_HIGH (1) - divisor low byte written
+# 
+# [T=55000] Driver -> INIT_HIGH : writing div[15:8]=0x00 to SPART1
+# Test  3 PASS: Driver state = IDLE (2) - initialization complete
+# 
+# Test  4 PASS: SPART1.divisor_buf = 80 (0x0050) for 38400 baud
+# 
+# [T=65000] Driver -> IDLE      : polling RDA
+# Test  5 PASS: SPART0.divisor_buf = 80 - baud rates matched
+# 
+# Test  6: Sending 'A' (0x41) at 38400 baud, awaiting echo...
+# [T=125625000] Driver -> READ      : reading received byte from SPART1
+# [T=125635000] Driver -> WAIT_TBR  : polling TBR
+# [T=125645000] Driver -> WRITE     : echoing 0x41 ('A') to SPART1
+# [T=125655000] Driver -> IDLE      : polling RDA
+# Test  6 PASS: Echo 0x41 ('A') matches sent 'A'
+# 
+# Test  7: Sending 'Z' (0x5A) at 38400 baud, awaiting echo...
+# [T=371865000] Driver -> READ      : reading received byte from SPART1
+# [T=371875000] Driver -> WAIT_TBR  : polling TBR
+# [T=371885000] Driver -> WRITE     : echoing 0x5a ('Z') to SPART1
+# [T=371895000] Driver -> IDLE      : polling RDA
+# Test  7 PASS: Echo 0x5a ('Z') matches sent 'Z'
+# 
+# Test  8: Sending 'HELLO' (5 chars) at 38400 baud, checking each echo...
+# [T=618105000] Driver -> READ      : reading received byte from SPART1
+# [T=618115000] Driver -> WAIT_TBR  : polling TBR
+# [T=618125000] Driver -> WRITE     : echoing 0x48 ('H') to SPART1
+# [T=618135000] Driver -> IDLE      : polling RDA
+#   'H' (0x48) echoed correctly
+# [T=864345000] Driver -> READ      : reading received byte from SPART1
+# [T=864355000] Driver -> WAIT_TBR  : polling TBR
+# [T=864365000] Driver -> WRITE     : echoing 0x45 ('E') to SPART1
+# [T=864375000] Driver -> IDLE      : polling RDA
+#   'E' (0x45) echoed correctly
+# [T=1110585000] Driver -> READ      : reading received byte from SPART1
+# [T=1110595000] Driver -> WAIT_TBR  : polling TBR
+# [T=1110605000] Driver -> WRITE     : echoing 0x4c ('L') to SPART1
+# [T=1110615000] Driver -> IDLE      : polling RDA
+#   'L' (0x4C) echoed correctly
+# [T=1356825000] Driver -> READ      : reading received byte from SPART1
+# [T=1356835000] Driver -> WAIT_TBR  : polling TBR
+# [T=1356845000] Driver -> WRITE     : echoing 0x4c ('L') to SPART1
+# [T=1356855000] Driver -> IDLE      : polling RDA
+#   'L' (0x4C) echoed correctly
+# [T=1603065000] Driver -> READ      : reading received byte from SPART1
+# [T=1603075000] Driver -> WAIT_TBR  : polling TBR
+# [T=1603085000] Driver -> WRITE     : echoing 0x4f ('O') to SPART1
+# [T=1603095000] Driver -> IDLE      : polling RDA
+#   'O' (0x4F) echoed correctly
+# Test  8 PASS: All 5 'HELLO' characters echoed correctly
+# 
+# Test  9: Reading SPART0 Status Register (IOADDR=01)...
+#   Status Register = 0x02  |  TBR=1  RDA=0
+# Test  9 PASS: TBR=1 (buffer free), RDA=0 (no pending data)
+# 
+# Test 10: Switching to 9600 baud (br_cfg=01, divisor=325)...
+# [T=1726715000] Driver -> INIT_LOW  : writing div[7:0]=0x45 to SPART1
+# [T=1726765000] Driver -> INIT_HIGH : writing div[15:8]=0x01 to SPART1
+# [T=1726775000] Driver -> IDLE      : polling RDA
+# Test 10 PASS: SPART1.divisor_buf = 325 (0x0145) for 9600 baud
+# 
+# Test 11: Sending 'S' (0x53) at 9600 baud, awaiting echo...
+# [T=2222285000] Driver -> READ      : reading received byte from SPART1
+# [T=2222295000] Driver -> WAIT_TBR  : polling TBR
+# [T=2222305000] Driver -> WRITE     : echoing 0x53 ('S') to SPART1
+# [T=2222315000] Driver -> IDLE      : polling RDA
+# Test 11 PASS: 9600 baud echo 0x53 ('S') matches 'S'
+# 
+# Test 12: Switching to 19200 baud (br_cfg=10, divisor=162)...
+# [T=2717825000] Driver -> INIT_LOW  : writing div[7:0]=0xa2 to SPART1
+# [T=2717875000] Driver -> INIT_HIGH : writing div[15:8]=0x00 to SPART1
+# [T=2717885000] Driver -> IDLE      : polling RDA
+# Test 12 PASS: SPART1.divisor_buf = 162 (0x00a2) for 19200 baud
+# 
+# Test 13: Sending '!' (0x21) at 19200 baud, awaiting echo...
+# [T=2967265000] Driver -> READ      : reading received byte from SPART1
+# [T=2967275000] Driver -> WAIT_TBR  : polling TBR
+# [T=2967285000] Driver -> WRITE     : echoing 0x21 ('!') to SPART1
+# [T=2967295000] Driver -> IDLE      : polling RDA
+# Test 13 PASS: 19200 baud echo 0x21 ('!') matches '!'
+# 
+# Test 14: Switching to 4800 baud (br_cfg=00, divisor=650)...
+# [T=3215045000] Driver -> INIT_LOW  : writing div[7:0]=0x8a to SPART1
+# [T=3215095000] Driver -> INIT_HIGH : writing div[15:8]=0x02 to SPART1
+# [T=3215105000] Driver -> IDLE      : polling RDA
+# Test 14 PASS: SPART1.divisor_buf = 650 (0x028a) for 4800 baud
+# 
+# Test 15: Sending 'X' (0x58) at 4800 baud, awaiting echo...
+# [T=4201365000] Driver -> READ      : reading received byte from SPART1
+# [T=4201375000] Driver -> WAIT_TBR  : polling TBR
+# [T=4201385000] Driver -> WRITE     : echoing 0x58 ('X') to SPART1
+# [T=4201395000] Driver -> IDLE      : polling RDA
+# Test 15 PASS: 4800 baud echo 0x58 ('X') matches 'X'
+# 
+# 
+# 
+# ========================================
+#            TEST SUMMARY
+# ========================================
+#   Tests Passed: 15
+#   Tests Failed: 0
+#   Total Tests:  15
+# 
+#   *** ALL TESTS PASSED! ***
+# ========================================
+# 
+# ** Note: $stop    : C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart_tb.v(585)
+#    Time: 5190890 ns  Iteration: 1  Instance: /spart_tb
+# Break in Module spart_tb at C:/Users/edwar/OneDrive/Documents/Coding/ECE 554/DE1-SoC_v.5.1.1_HWrevF_SystemCD/Tools/SystemBuilder/CodeGenerated/DE1_SOC/lab3_spart/spart_tb.v line 585
